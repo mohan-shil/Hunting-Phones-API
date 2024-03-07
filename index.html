@@ -13,27 +13,27 @@
     </header>
     <main class="container mx-auto mt-8">
 
-        <section class="bg-gray-50 p-4 m-4">
-              <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />    
-              <button onclick="handleSearch()" class="btn btn-warning">Search</button>
+        <section class="p-2 rounded-xl w-auto text-right  ">
+              <input id="search-field" type="text" placeholder="type here ..." class="input input-bordered w-full max-w-xs bg-gray-100 text-gray-500 font-medium text-lg mb-4" />    
+              <button onclick="handleSearch()" class="ml-3 font-semibold text-lg btn btn-warning">Search</button>
         </section>
 
         <!-- Search result  -->
         <section>
             <!-- Loading section  -->
-            <div class="text-center my-32 hidden">
+            <div id="loading-spinner" class="text-center my-32 hidden">
                 <span class="loading loading-spinner loading-lg"></span>
             </div>
             
         <!-- Search result  -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
-            
+             
             </div>
         
             <!--  Show all button -->
-            <div id="show-all-container" class="hidden">    
+            <div id="show-all-container" class="text-center my-10 hidden">    
         
-                <button class="btn btn-active btn-accent">Show All</button>
+                <button onclick="handleShowAll()" class="btn btn-active btn-accent text-lg text-lime-50 font-semibold">Show All</button>
         
             </div>
         
