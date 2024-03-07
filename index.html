@@ -9,21 +9,19 @@
 </head>
 <body>
     <header>
-        <h2> Hunting Phones</h2>
+        <h2 class="text-center text-3xl font-bold text-yellow-100 mt-4"> Hunting Phones</h2>
     </header>
-    <main>
+    <main class="container mx-auto mt-8">
+
+        <section class="bg-gray-50 p-4 m-4">
+              <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />    
+              <button onclick="handleSearch()" class="btn btn-warning">Search</button>
+        </section>
+
+        <!-- Search result  -->
         <section>
-            <div id="phone-container">
-                <div class="card card-compact w-96 bg-gray-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
-                    </div>
-                  </div>
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" >
+                
             </div>
         </section>
     </main>
